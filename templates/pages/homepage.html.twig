@@ -1,0 +1,19 @@
+{% extends "base/base.html.twig" %}
+
+{% use "modules/calendar.html.twig" %}
+{% use "modules/poll.html.twig" %}
+
+{% block css %}
+  {{ parent() }}
+  {{ block("calendar_css") }}
+  {{ block("poll_css") }}
+{% endblock %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+  <h1>Homepage</h1>
+
+  {{ block("calendar") }}
+  {{ block("poll") }}
+{% endblock %}

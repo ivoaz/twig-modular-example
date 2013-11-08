@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        {% block css %}
+            <link rel="stylesheet" href="base.css">
+            <link rel="stylesheet" href="header.css">
+            <link rel="stylesheet" href="footer.css">
+        {% endblock %}
+    </head>
+
+    <body>
+        {% include "base/header.html.twig" %}
+
+        {% block content %}{% endblock %}
+
+        {% include "base/footer.html.twig" %}
+    </body>
+</html>

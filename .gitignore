@@ -1,0 +1,5 @@
+/vendor/
+/compilation_cache/
+composer*
+/nbproject/
+
