@@ -1,5 +1,5 @@
 /vendor/
 /compilation_cache/
-composer*
+composer.phar
 /nbproject/
 
